@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *)); 
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  font-size: clamp(16px, 1.1vw + 12px, 20px);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: clip;
+  background: transparent; 
+  color: inherit;          
+}
+
